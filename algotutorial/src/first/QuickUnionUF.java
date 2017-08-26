@@ -18,13 +18,26 @@ public class QuickUnionUF {
 			}
 			else {
 				uf.union(p, q);
-				StdOut.print(uf);
+				uf.print_id();
 			}
 				
 		}
 
 	}
 	private int[] id;
+	
+	public void print_id() {
+		StdOut.print("id   :");
+		for(int i=0; i<id.length;i++){
+			StdOut.print(i);			
+		}
+		StdOut.println();
+		StdOut.print("value:");
+		for(int i=0;i<id.length;i++) {
+			StdOut.print(id[i]);
+		}
+		StdOut.println();		
+	}
 	
 	public QuickUnionUF(int N) {
 		//constructor

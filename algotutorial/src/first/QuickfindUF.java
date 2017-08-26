@@ -9,6 +9,33 @@ public class QuickfindUF {
 	private int count;
 	
 	
+	public static void main(String[] args) {
+		int n = 10;
+		
+		QuickfindUF uf = new QuickfindUF(n);
+		uf.print_id(); //disply id
+		StdOut.println();
+		
+		while (!StdIn.isEmpty())
+		{
+			int p= StdIn.readInt();
+			int q= StdIn.readInt();
+			
+			if(uf.connected(p, q)) {
+				StdOut.println("already connected");
+			}
+			else {
+				uf.union(p, q);
+				//StdOut.println(p+" "+q);
+				uf.print_id(); //test code
+			}
+			
+			
+		}
+		StdOut.println(uf.count()+"components");
+	}
+	
+	
 	public QuickfindUF(int n)
 	{
 		count = n;
@@ -52,7 +79,6 @@ public class QuickfindUF {
 		}
 	}
 	
-	
 	public boolean connected(int p, int q)
 	{  
 		validate(p);
@@ -81,34 +107,6 @@ public class QuickfindUF {
 	}
 	
 	
-	public static void main(String[] args) {
-		int n = 10;
-		//StdOut.println(n);
-		
-		QuickfindUF uf = new QuickfindUF(n);
-		uf.print_id(); //test code
-		StdOut.println();
-		
-		while (!StdIn.isEmpty())
-		{
-			int p= StdIn.readInt();
-			int q= StdIn.readInt();
-			//boolean b = connected(p,q);
-			//StdOut.println(b);
-			
-			if(uf.connected(p, q)) {
-				StdOut.println("already connected");
-			}
-			else {
-				uf.union(p, q);
-				//StdOut.println(p+" "+q);
-				uf.print_id(); //test code
-			}
-			
-			
-		}
-		StdOut.println(uf.count()+"components");
-	}
 	
 }
 	
