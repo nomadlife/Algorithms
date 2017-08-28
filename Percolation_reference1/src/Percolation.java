@@ -36,7 +36,7 @@ public class Percolation {
     }
 
     public void open(int i, int j) {    // open site (row i, column j) if it is not open already
-        if (!isOpen(i, j)) {
+        if (!isOpen(i, j)) { // if not opened
             int fieldIndex = getFieldIndexInQuickUnionStructure(i, j);
 
             if (i == 1) {

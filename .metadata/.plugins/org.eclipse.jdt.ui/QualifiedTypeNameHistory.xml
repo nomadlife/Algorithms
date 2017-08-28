@@ -3,8 +3,8 @@
 <fullyQualifiedTypeName name="edu.princeton.cs.algs4.UF"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="edu.princeton.cs.algs4.StdIn"/>
-<fullyQualifiedTypeName name="edu.princeton.cs.algs4.WeightedQuickUnionUF"/>
 <fullyQualifiedTypeName name="edu.princeton.cs.algs4.StdStats"/>
 <fullyQualifiedTypeName name="edu.princeton.cs.algs4.StdRandom"/>
 <fullyQualifiedTypeName name="edu.princeton.cs.algs4.StdOut"/>
+<fullyQualifiedTypeName name="edu.princeton.cs.algs4.WeightedQuickUnionUF"/>
 </qualifiedTypeNameHistroy>
