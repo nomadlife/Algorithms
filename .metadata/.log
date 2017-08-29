@@ -4496,3 +4496,9 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.core 4 0 2017-08-28 16:51:22.377
 !MESSAGE Invalid ZIP archive: src/InteractivePercolationVisualizer.java [in Percolation_reference2]
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-08-28 17:32:02.356
+!MESSAGE Invalid ZIP archive: src/input10.txt [in Percolation_reference2]
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-08-28 17:35:17.890
+!MESSAGE Invalid ZIP archive: src/input10.txt [in Percolation_reference2]
